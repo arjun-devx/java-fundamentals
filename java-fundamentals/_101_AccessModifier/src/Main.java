@@ -1,9 +1,7 @@
-package oops;
+import oops.Student;
 
-import java.lang.*;
-
-public class MainOOPS {
-    public static void main (String[] args) {
+public class Main {
+    public static void main(String[] args) {
         Student student;
         student = new Student();
         student.id = 1;
