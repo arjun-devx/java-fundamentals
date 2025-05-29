@@ -11,7 +11,6 @@ public class MainOOPS {
         student.name = "Arjun";
         student.display();
          */
-
         //Creating Object using the parameterized constructor
         Student student1 = new Student(1, "Arjun");
         Student student2 = new Student(2, "Agastya");

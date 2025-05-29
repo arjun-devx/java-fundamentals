@@ -145,3 +145,16 @@ class Bike {
 | JRE         | JVM + standard libraries               | -           |
 | JDK         | JRE + development tools                | -           |
 
+
+## 📌 JDK, JRE, and JVM Diagram
+
+![JDK vs JRE vs JVM](https://www.geeksforgeeks.org/wp-content/uploads/jdk-jre-jvm.png)
+
+*Source: [GeeksforGeeks](https://www.geeksforgeeks.org/differences-jdk-jre-jvm/)*
+
+## 📌 Stack vs Heap Memory Allocation
+
+![Stack vs Heap Memory](https://www.geeksforgeeks.org/wp-content/uploads/Stack-and-Heap-Memory-in-Java.png)
+
+*Source: [GeeksforGeeks](https://www.geeksforgeeks.org/java-stack-vs-heap-memory-allocation/)*
+
