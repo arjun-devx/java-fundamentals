@@ -21,6 +21,11 @@ public class Student {
         this.name = sname;
     }
 
+    public Student (Student student) {
+        id = student.id;
+        name = student.name;
+    }
+
     public void display() {
         System.out.println("id: " + id);
         System.out.println("name: " + name);

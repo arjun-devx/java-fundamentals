@@ -21,5 +21,11 @@ public class Main {
         IPhone iPhone15 = new IPhone(15, 15, 50000, "Iphone", "Apple", 6, 4, 3500);
         IPhone iPhone16 = new IPhone(iPhone15);
         IPhone iPhone17 = new IPhone(iPhone16);
+
+        //shallow copy and deep copy
+        Student std = new Student(3, "John");
+        Student std1 = std;
+        Student std2 = new Student(std);
+
     }
 }
