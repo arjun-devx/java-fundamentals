@@ -22,4 +22,9 @@ public class ElectricCar extends Car {
         System.out.println(super.getNoOfWheels());
     }
 
+    //method overriding - the child class can use the same name of the method that was inherited from the parent but can keep the different logic / implementation
+    public void startEngine() {
+        System.out.println("Start Engine in Hybrid Mode");
+    }
+
 }

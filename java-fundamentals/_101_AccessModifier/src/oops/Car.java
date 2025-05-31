@@ -36,6 +36,10 @@ public class Car {
         return noOfWheels;
     }
 
+    public void startEngine() {
+        System.out.println("Start the engine normally");
+    }
+
     public void setNoOfWheels(int noOfWheels) {
         this.noOfWheels = noOfWheels;
     }

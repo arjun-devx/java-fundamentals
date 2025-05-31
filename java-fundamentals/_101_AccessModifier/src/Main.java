@@ -1,7 +1,4 @@
-import oops.Calculator;
-import oops.ElectricCar;
-import oops.IPhone;
-import oops.Student;
+import oops.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -46,5 +43,11 @@ public class Main {
         calculator.add(4.5, 5.6);
         calculator.add(1.2, 9999);
         calculator.add(100000, 1.11111);
+
+        Car car = new Car();
+        car.startEngine();
+
+        ElectricCar electricCar = new ElectricCar();
+        electricCar.startEngine();
     }
 }
