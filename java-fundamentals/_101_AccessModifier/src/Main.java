@@ -1,9 +1,13 @@
+import oops.ElectricCar;
 import oops.IPhone;
 import oops.Student;
 
 public class Main {
     public static void main(String[] args) {
 
+        //Constructor Demo -
+        /*
+        This section is for the Constructor demo
         //Creating Object using the default constructor
         Student student;
         student = new Student();
@@ -26,6 +30,15 @@ public class Main {
         Student std = new Student(3, "John");
         Student std1 = std;
         Student std2 = new Student(std);
+        */
 
+        //Inheritance Demo -
+        ElectricCar electricCar = new ElectricCar();
+        electricCar.headLight = "Xeon LED";
+        electricCar.backLight = "Matrix LED";
+        electricCar.noOfWheels = 5;
+        electricCar.batteryCount = 10;
+        electricCar.displayCar();
+        System.out.println("Attribute from the Child Class ElectricCar - 'batteryCount': " + electricCar.batteryCount);
     }
 }
