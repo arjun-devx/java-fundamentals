@@ -1,7 +1,7 @@
 package oops;
 public class Car {
 
-    public int noOfWheels;
+    private int noOfWheels;
     public String headLight;
     public String backLight;
 
@@ -30,5 +30,29 @@ public class Car {
         System.out.println("Attribute from the Super Class Car - 'No. Of Wheels in the Car noOfWheels': " + noOfWheels);
         System.out.println("Attribute from the Super Class Car - 'headLight of the Car headLight': " + headLight);
         System.out.println("Attribute from the Super Class Car - 'backLight of the Car backLight': " + backLight);
+    }
+
+    public int getNoOfWheels() {
+        return noOfWheels;
+    }
+
+    public void setNoOfWheels(int noOfWheels) {
+        this.noOfWheels = noOfWheels;
+    }
+
+    public String getHeadLight() {
+        return headLight;
+    }
+
+    public void setHeadLight(String headLight) {
+        this.headLight = headLight;
+    }
+
+    public String getBackLight() {
+        return backLight;
+    }
+
+    public void setBackLight(String backLight) {
+        this.backLight = backLight;
     }
 }

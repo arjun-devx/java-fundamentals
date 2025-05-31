@@ -33,11 +33,7 @@ public class Main {
         */
 
         //Inheritance Demo -
-        ElectricCar electricCar = new ElectricCar();
-        electricCar.headLight = "Xeon LED";
-        electricCar.backLight = "Matrix LED";
-        electricCar.noOfWheels = 5;
-        electricCar.batteryCount = 10;
+        ElectricCar electricCar = new ElectricCar(5, "Xeon LED", "Matrix LED", 10, 50000);
         electricCar.displayCar();
         System.out.println("Attribute from the Child Class ElectricCar - 'batteryCount': " + electricCar.batteryCount);
     }
