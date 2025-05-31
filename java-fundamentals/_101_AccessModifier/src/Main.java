@@ -1,3 +1,4 @@
+import oops.Calculator;
 import oops.ElectricCar;
 import oops.IPhone;
 import oops.Student;
@@ -33,8 +34,17 @@ public class Main {
         */
 
         //Inheritance Demo -
+        /*
         ElectricCar electricCar = new ElectricCar(5, "Xeon LED", "Matrix LED", 10, 50000);
         electricCar.displayCar();
         System.out.println("Attribute from the Child Class ElectricCar - 'batteryCount': " + electricCar.batteryCount);
+         */
+
+        //Polymorphism demo
+        Calculator calculator = new Calculator();
+        calculator.add(5, 6);
+        calculator.add(4.5, 5.6);
+        calculator.add(1.2, 9999);
+        calculator.add(100000, 1.11111);
     }
 }

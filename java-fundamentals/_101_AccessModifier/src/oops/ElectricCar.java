@@ -17,7 +17,7 @@ public class ElectricCar extends Car {
         this.batteryCapacity = batteryCapacity;
     }
 
-    //using getter to access private attribute 
+    //using getter to access private attribute
     public void electricWheelsCount() {
         System.out.println(super.getNoOfWheels());
     }
