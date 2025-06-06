@@ -26,5 +26,4 @@ public class ElectricCar extends Car {
     public void startEngine() {
         System.out.println("Start Engine in Hybrid Mode");
     }
-
 }
