@@ -49,5 +49,19 @@ public class Main {
 
         ElectricCar electricCar = new ElectricCar();
         electricCar.startEngine();
+
+        Computer c1 = new Computer();
+        c1.setRam(4);
+        Computer c2 = new Computer();
+        c2.setRam(5);
+        Computer c3 = new Computer();
+        c3.setRam(6);
+
+        System.out.println(c1.getRam());
+        System.out.println(c2.getRam());
+        System.out.println(c3.getRam());
+        c1.setCpuArch("intel");
+        System.out.println(c3.getCpuArch());
+        System.out.println(c2.getCpuArch());
     }
 }
