@@ -4,15 +4,23 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello World from the thread name : " + Thread.currentThread().getName());
 
+        //Calling HelloWorldPrinter.java to test thread
         HelloWorldPrinter helloWorldPrinterObj = new HelloWorldPrinter();
         Thread threadPrint =  new Thread(helloWorldPrinterObj);
         threadPrint.start();
 
+        //Calling NumberPrinter
         for (int i = 0; i < 100; i++) {
             NumberPrinter numberPrinterObj = new NumberPrinter(i);
             Thread threadNumber = new Thread(numberPrinterObj);
             threadNumber.start();
         }
+
+        //Calling SumOfNumbers
+        SumOfNumbers sumOfNumbers = new SumOfNumbers(10);
+        Thread thread = new Thread(sumOfNumbers);
+        thread.start();
+        System.out.println("Printing the thread:" + Thread.currentThread().getName());
     }
 }
 
