@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32b22209-bb4f-4538-b835-278ac388d4e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ThreadDemo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ExecutorsAndCallables/FibonacciUsingFixedThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ExecutorsAndCallables/FibonacciUsingFixedThreadMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExecutorsAndCallables/FibonacciUsingFixedThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExecutorsAndCallables/FibonacciUsingFixedThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExecutorsAndCallables/FibonacciUsingFixedThreadMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExecutorsAndCallables/FibonacciUsingFixedThreadMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
