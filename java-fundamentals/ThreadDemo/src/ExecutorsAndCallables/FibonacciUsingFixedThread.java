@@ -15,7 +15,7 @@ public class FibonacciUsingFixedThread implements Callable<Integer> {
 
     @Override
     public Integer call() throws Exception {
-        System.out.println("from thread: " + Thread.currentThread().getName());
+        System.out.println(number + " from thread: " + Thread.currentThread().getName());
         if (number <= 1) return number;
 
         ExecutorService executorService = Executors.newFixedThreadPool(2);
