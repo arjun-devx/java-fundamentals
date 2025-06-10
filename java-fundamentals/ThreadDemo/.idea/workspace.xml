@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32b22209-bb4f-4538-b835-278ac388d4e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ExecutorsAndCallables/FibonacciUsingCachedThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ExecutorsAndCallables/FibonacciUsingCachedThreadMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IntroToThreads/Adder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IntroToThreads/Count.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IntroToThreads/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IntroToThreads/Subtractor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ExecutorsAndCallables/FibonacciUsingFixedThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExecutorsAndCallables/FibonacciUsingFixedThread.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,10 +27,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2yGZ4DT3NNdsPrpzsE3ZjnDHtGp" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -40,6 +48,7 @@
     "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true"
   }
