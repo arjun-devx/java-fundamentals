@@ -15,9 +15,10 @@ public class AdderMutex implements Runnable {
     @Override
     public void run() {
         for(int i = 1; i <= 10000; i++) {
-            mutex.lock();
+            mutex.lock(); //one thread at a time will enter this mutex/reentrance marked critical section with a key
             count.value++;
             mutex.unlock();
+            //follows the - 1. no busy waiting 2. no bounded time 3. one thread at a time 4. progressive (only Critical section)
         }
     }
 }

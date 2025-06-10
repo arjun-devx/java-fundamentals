@@ -4,11 +4,11 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
-        ReentrantLock reentrantLock = new ReentrantLock();
+        //ReentrantLock reentrantLock = new ReentrantLock();
 
         Count count = new Count(0);
-        AdderMutex adder = new AdderMutex(count, reentrantLock);
-        SubtractorMutex subtractor = new SubtractorMutex(count, reentrantLock);
+        AdderSynchronized adder = new AdderSynchronized(count);
+        SubtractorSynchronized subtractor = new SubtractorSynchronized(count);
 
         Thread threadAdder = new Thread(adder);
         Thread threadSubtractor = new Thread(subtractor);
