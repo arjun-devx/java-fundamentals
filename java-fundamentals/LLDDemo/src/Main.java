@@ -19,5 +19,25 @@ public class Main {
 
         HashMap<Calculator<String, Double>, String> map1 = new HashMap<>();
         map1.put(calculator2, "test");
+
+        //Generics
+        //ClassName objName = new ClassName();
+        //new ClassName(); -- this is supported for generics -- but not recommended
+        //new ClassName<>(); -- this is supported for generics -- and it is recommended way of implementing generics.
+
+        //Integer -- int
+        //Boolean -- boolean
+        //Double -- double --> Double/Integer/Boolean these are wrapper classes
+        //Generic only supports - objects -> Object Class
+        //Generics dont support primitive variables, it only supports object as it is built on top of object class
+        //We  need to use the wrapper classes for the primitive variables, for example:
+        Integer i = 10;
+        int x = i;
+
+        int y = 10;
+        Integer z = y;
+
+        //This is called Auto-boxing -- automatically converts wrapper class object to primitive and vice-versa
+
     }
 }
