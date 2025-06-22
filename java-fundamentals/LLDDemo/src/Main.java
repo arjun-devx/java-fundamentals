@@ -87,4 +87,9 @@ public class Main {
         }
     }
 
+    //Animal Extends LivingBeing
+    List<?> allList = new ArrayList<>();
+    List<? extends Animal> animalAndChildrenList = new ArrayList<>();
+    List<? super Animal> animalAndSuperList = new ArrayList<>();
+    List<Animal> animalList = new ArrayList<>();
 }
