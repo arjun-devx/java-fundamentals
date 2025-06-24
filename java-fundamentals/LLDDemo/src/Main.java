@@ -74,7 +74,40 @@ public class Main {
         AnimalPrinter<Animal> animalPrinter = new AnimalPrinter<>();
         animalPrinter.print(animal);
         animalPrinter.print(dog);
+
+        System.out.println(" ------------- ");
+        //Below objects are for understanding the Anonymous class
+        //Since the interface does not allow object creation directly, we need to keep on implementing the interface through a class and then create objects
+        //and if the implemented class isy not very reusable then creating multiple class implementations makes code length unnecessarily without any reusability.
+        StatusNodeValidator statusNodeValidator = new StatusNodeValidator();
+        statusNodeValidator.validate();
+
+        ReviewNodeValidator reviewNodeValidator = new ReviewNodeValidator();
+        reviewNodeValidator.validate();
+        //now in order to overcome the above points - we can implement using the anonymous class
+        Validator statusNodeValidatorAnonymousClass = new Validator() {
+            @Override
+            public Boolean validate() {
+                System.out.println("Status Node Validator printing through the Anonymous Class");
+                return true;
+            }
+        };
+        statusNodeValidatorAnonymousClass.validate();
+        //InterfaceName objectName = new InterfaceName(); - does not work / not allowed
+        // instead
+        //InterfaceName objectName - new InterfaceName {
+        //      Implement all the methods for the interface;
+        // };
+        Validator reviewValidatorAnonymousClass = new Validator() {
+            @Override
+            public Boolean validate() {
+                System.out.println("Review Node Validator printing through the Anonymous Class");
+                return true;
+            }
+        };
+        reviewValidatorAnonymousClass.validate();
     }
+
     //Dog extends Animal -
     public static void print(Animal animal) {
         animal.print();
@@ -92,4 +125,5 @@ public class Main {
     List<? extends Animal> animalAndChildrenList = new ArrayList<>();
     List<? super Animal> animalAndSuperList = new ArrayList<>();
     List<Animal> animalList = new ArrayList<>();
+
 }
