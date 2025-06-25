@@ -106,6 +106,29 @@ public class Main {
             }
         };
         reviewValidatorAnonymousClass.validate();
+
+        //Lambda - lambdas -> is shorter code for anonymous class implementation, for Functional Interface
+        Validator lambdaExampleObject = () -> {
+            System.out.println("lambda equivalent of the Anonymous class above");
+            return true;
+        };
+        lambdaExampleObject.validate();
+
+        //Lambda - i can further make it shorter. no need of curly braces if single line of code. and no need for return
+        Validator lambdaShorterObject = () -> true;
+        lambdaShorterObject.validate();
+
+
+        //Runnable functional interface with lambda implementation using single line without creating a separate class to implement the Runnable interface
+        Runnable helloWorldPrinter = () -> System.out.println("Hello World from " + Thread.currentThread().getName());
+        Thread thread1 = new Thread(helloWorldPrinter);
+        thread1.start();
+
+        Thread thread2 = new Thread( () -> {
+            System.out.println("Hello World from " + Thread.currentThread().getName());
+        }
+        );
+        thread2.start();
     }
 
     //Dog extends Animal -
