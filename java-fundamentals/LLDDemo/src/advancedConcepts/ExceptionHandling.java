@@ -37,5 +37,8 @@ public class ExceptionHandling {
 	        at advancedConcepts.ExceptionHandling.divide(ExceptionHandling.java:6)
 	        at advancedConcepts.ExceptionHandling.main(ExceptionHandling.java:11)
         */
+
+        Calculator<Integer, Integer> calculator = new Calculator<>();
+        calculator.chooseOperation(1,10, 2);
     }
 }
