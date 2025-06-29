@@ -49,7 +49,7 @@ public class Calculator <X, Y> {
 
     public void divideMethod(int a , int b) throws FileNotFoundException, InterruptedException {
         System.out.println(a/b);
-        FileReader fileReader = new FileReader("SomeFileName");
+        //FileReader fileReader = new FileReader("SomeFileName");
     }
     //RunTimeException - exception propagated upwards automatically - Implicit
     //CompileException - Either handle with try/catch or propagate upwards using "throws" - Explicit

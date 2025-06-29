@@ -2,6 +2,7 @@ package advancedConcepts;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.util.Scanner;
 
 public class ExceptionHandling {
 
@@ -24,11 +25,31 @@ public class ExceptionHandling {
         }
     }
 
+
+    public static void takeInput() {
+        Scanner input = null;
+        try {
+             input = new Scanner(System.in);
+            String string = input.next();
+            string = null;
+            System.out.println(string.length());
+        }
+        catch (NullPointerException ne) {
+            ne.printStackTrace();
+            System.out.println("String was null");
+        }
+        finally {
+            System.out.println("Final block Entered ");
+            input.close();
+            System.out.println("Final block Closed");
+        }
+    }
+
     public static void main (String[] args) throws FileNotFoundException, InterruptedException {
 
-        readFile();
+        //readFile();
 
-        divide(5,1);
+        //divide(5,1);
         //divide(10, 0);
         /*
         ArithmeticException - this pop at the run time and not at the compile time || RuntimeException || UnCheckedException
@@ -38,8 +59,11 @@ public class ExceptionHandling {
 	        at advancedConcepts.ExceptionHandling.main(ExceptionHandling.java:11)
         */
 
-        Calculator<Integer, Integer> calculator = new Calculator<>();
-        calculator.chooseOperation(3,10, 2);
+/*        Calculator<Integer, Integer> calculator = new Calculator<>();
+        calculator.chooseOperation(2,10, 1);
         calculator.divideMethod(1, 10);
+
+ */
+        takeInput();
     }
 }
