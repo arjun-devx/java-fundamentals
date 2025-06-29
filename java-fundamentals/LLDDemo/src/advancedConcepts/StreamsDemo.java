@@ -3,6 +3,7 @@ package advancedConcepts;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -20,6 +21,19 @@ public class StreamsDemo {
         Stream<String> directStringStream = Stream.of("Ram", "Shyam");
         Stream<Boolean> directBooleanStream = Stream.of(true,false, true);
         Stream<Dog> directStreamDog = Stream.of(new Dog(), new Dog(), new Dog());
+
+        List<String> names = Arrays.asList("Arjun", "Agasytya", "Abhimanyu", "Bhim", "Sahdev", "Nakul", "Yudhishthir");
+        names.stream()
+                .filter(n -> n.startsWith("A"))
+                .forEach(n -> System.out.println(n));
+        System.out.println("--------------------------");
+        names.stream()
+                .filter(n -> n.length() > 4)
+                .forEach(n -> System.out.println(n));
+        List<String> upperCaseNames = names.stream()
+                .map(String :: toUpperCase).sorted()
+                .collect(Collectors.toList());
+        System.out.println(upperCaseNames);
     }
     /*
     1. Use Stream<Generic> with generics, dont rely much on the primitive streams
