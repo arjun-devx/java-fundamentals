@@ -24,7 +24,7 @@ public class ExceptionHandling {
         }
     }
 
-    public static void main (String[] args) {
+    public static void main (String[] args) throws FileNotFoundException, InterruptedException {
 
         readFile();
 
@@ -39,6 +39,7 @@ public class ExceptionHandling {
         */
 
         Calculator<Integer, Integer> calculator = new Calculator<>();
-        calculator.chooseOperation(1,10, 2);
+        calculator.chooseOperation(3,10, 2);
+        calculator.divideMethod(1, 10);
     }
 }

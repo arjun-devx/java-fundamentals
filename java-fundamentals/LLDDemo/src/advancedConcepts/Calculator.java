@@ -1,5 +1,8 @@
 package advancedConcepts;
 
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+
 public class Calculator <X, Y> {
     private X x;
     private Y y;
@@ -12,12 +15,15 @@ public class Calculator <X, Y> {
     public Calculator() {
     }
 
-    public void chooseOperation(int operationType, int a, int b) {
+    public void chooseOperation(int operationType, int a, int b) throws  FileNotFoundException, InterruptedException{
         if(operationType == 1) {
             divide(a, b);
-        } else {
+        } else if (operationType == 2) {
             add(a, b);
+        } else {
+            throw new CalculatorException("Invalid Operation Type");
         }
+
     }
     public void divide(int a, int b) {
         System.out.println("Entered Divide Method");
@@ -26,7 +32,7 @@ public class Calculator <X, Y> {
             String str = "str";
             str.length();
             int[] arr = new int[3];
-            arr[3] = 2; //ArrayIndexOutOfBoundsException
+            arr[2] = 2; //ArrayIndexOutOfBoundsException
         } catch (ArithmeticException ae) {
             System.out.println("Divide By Zero - ArithmeticException");
             ae.printStackTrace();
@@ -40,6 +46,14 @@ public class Calculator <X, Y> {
         }
         System.out.println("Exit Divide Method");
     }
+
+    public void divideMethod(int a , int b) throws FileNotFoundException, InterruptedException {
+        System.out.println(a/b);
+        FileReader fileReader = new FileReader("SomeFileName");
+    }
+    //RunTimeException - exception propagated upwards automatically - Implicit
+    //CompileException - Either handle with try/catch or propagate upwards using "throws" - Explicit
+
     public void add(int a, int b) {
         System.out.println(a + b);
     }
