@@ -1,5 +1,4 @@
 package designPattern.Singleton;
-
 public class Singleton {
     private static Singleton singletonInstance = null;
 

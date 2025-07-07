@@ -5,5 +5,6 @@ public class Main {
         Singleton getsingletonObj1 = Singleton.getObject();
         Singleton getSingletonObj2 = Singleton.getObject();
         Singleton getSingletonObj3 = Singleton.getObject();
+        SingletonAdv getSingleTonAdvObj1 = SingletonAdv.getObject();
     }
 }
