@@ -1,4 +1,4 @@
-package designPattern.Singleton;
+package designPattern.A_Singleton;
 public class Singleton {
     private static Singleton singletonInstance = null;
 
@@ -6,7 +6,8 @@ public class Singleton {
     }
 
     public static Singleton getObject() {
-        if (singletonInstance == null) singletonInstance = new Singleton();
+        if (singletonInstance == null)
+            singletonInstance = new Singleton();
         return singletonInstance;
     }
 }

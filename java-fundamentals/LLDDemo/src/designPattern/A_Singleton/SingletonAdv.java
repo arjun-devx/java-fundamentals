@@ -1,4 +1,4 @@
-package designPattern.Singleton;
+package designPattern.A_Singleton;
 
 // in order to handle the multiple threads accessing the if block in parallel which can create multiple objects, 
 // placing the synchronised or putting a thread lock is required but if block needs to be repositioned 
