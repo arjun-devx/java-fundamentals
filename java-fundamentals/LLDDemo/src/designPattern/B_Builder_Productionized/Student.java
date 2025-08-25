@@ -10,7 +10,6 @@ public class Student {
     private int gradYear;
     private int phoneNumber;
 
-
     public Student(int id, String name, double psp, int age, String batch, String universityName, int gradYear, int phoneNumber) {
         this.id = id;
         this.name = name;
@@ -35,7 +34,6 @@ public class Student {
                 ", phoneNumber='" + phoneNumber + '\'' +
                 '}';
     }
-
 
     public static StudentHelper builder() {
         return  new StudentHelper();
@@ -91,7 +89,6 @@ public class Student {
             return this;
         }
 
-
         public Student build() {
             validate();
             return new Student(
@@ -110,7 +107,5 @@ public class Student {
             if (this.gradYear > 2025) throw new InvalidateGradYearException("Grad Year must be 2025 of earlier");
             if (this.name == null || this.name.isBlank() || this.name.isEmpty()) throw new InvalideNameException("Name cannot be empty");
         }
-
     }
-
 }
