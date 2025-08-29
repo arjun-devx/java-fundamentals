@@ -41,4 +41,8 @@ public class Car {
     public void setLaunchDate(String launchDate) {
         this.launchDate = launchDate;
     }
+
+    public void startEngine() {
+        System.out.println("Start a normal car Engine");
+    }
 }

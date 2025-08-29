@@ -1,4 +1,5 @@
 import Calculator.Calculator;
+import Car_OOPS.Car;
 import Car_OOPS.ElectricCar;
 import Car_OOPS.HybridCar;
 import Car_OOPS.PetrolCar;
@@ -36,9 +37,19 @@ public class Main {
         petrolCar1.printCar();
 
         //Polymorphism
+
+        //method overloading
         Calculator calculator = new Calculator();
         calculator.add(4, 5);
         calculator.add(4.5,4);
         calculator.add(5.5, 6.5);
+
+        System.out.println("+++++++++++++++++++++");
+        //method overriding
+        Car car = new Car();
+        car.startEngine();
+
+        ElectricCar electricCar1 = new ElectricCar();
+        electricCar1.startEngine();
     }
 }

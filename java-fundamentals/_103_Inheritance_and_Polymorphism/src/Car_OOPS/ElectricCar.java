@@ -19,4 +19,9 @@ public class ElectricCar extends  Car{
         super.setLaunchDate("28/08/2025");
         System.out.println("NoOfWheels : " + super.getLaunchDate());
     } //calling private attribute using the getter and setter method
+
+    @Override
+    public void startEngine() {
+        System.out.println("Starting Electric motor from battery in ElectricCar");
+    }
 }

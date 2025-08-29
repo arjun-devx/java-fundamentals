@@ -14,5 +14,5 @@ public class Calculator {
     public void add (double x, double y) { //add(double, double)
         System.out.println(x + y);
     }
-    //Java allows duplicate methods(method overloading) but won't allow same name + same type of argument types
+    //Java allows duplicate method names(method overloading) but won't allow same name + same type of argument types
 }
