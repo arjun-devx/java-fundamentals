@@ -1,5 +1,6 @@
 import Car_OOPS.ElectricCar;
 import Car_OOPS.HybridCar;
+import Car_OOPS.PetrolCar;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,5 +23,11 @@ public class Main {
 
         HybridCar hybridCar1 = new HybridCar(6);
         hybridCar1.printCar();
+
+        PetrolCar petrolCar = new PetrolCar();
+        petrolCar.printCar();
+
+        PetrolCar petrolCar1 = new PetrolCar(5, "Halogen", "LED");
+        petrolCar1.printCar();
     }
 }

@@ -9,5 +9,11 @@ public class ElectricCar extends  Car{
 
     public ElectricCar() {
         System.out.println("ElectricCar Constructor - Child Class of the parent class Car");
+        //this requires default constructor in parent class
     }
+    void display() {
+        System.out.println(protectedTechnology);
+        showMessage();
+    }
+
 }

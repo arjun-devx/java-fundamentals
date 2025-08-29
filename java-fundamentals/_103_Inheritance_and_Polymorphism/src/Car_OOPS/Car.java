@@ -4,6 +4,7 @@ public class Car {
     public int noOfWheels;
     public String headLight;
     public String breakLight;
+    protected String protectedTechnology = "This is protected technology";
 
     //constructor
 
@@ -19,11 +20,16 @@ public class Car {
         this.noOfWheels = noOfWheels;
         this.headLight = headLight;
         this.breakLight = breakLight;
+        System.out.println("Car Constructor with three parameters");
     }
 
     public void printCar() {
         System.out.println("No. of Wheels " + noOfWheels);
         System.out.println("Head Light: " + headLight);
         System.out.println("Brake Light: " + breakLight);
+    }
+
+    protected void showMessage() {
+        System.out.println(protectedTechnology);
     }
 }
