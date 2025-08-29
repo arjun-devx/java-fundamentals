@@ -10,6 +10,10 @@ public class Main {
         electricCar.headLight = "Matrix LED";
         electricCar.noOfWheels = 5;
         electricCar.printCar(); //this method is inherited from the parent class Car
+        electricCar.setLaunchDate("1232");
+        System.out.println(electricCar.getLaunchDate());
+        electricCar.printElectricCar();
+        electricCar.display();
 
         System.out.println("================");
 

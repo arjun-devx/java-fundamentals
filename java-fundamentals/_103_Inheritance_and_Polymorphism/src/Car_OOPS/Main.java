@@ -9,6 +9,8 @@ public class Main {
         electricCar.noOfWheels = 5;
         electricCar.printCar(); //this method is inherited from the parent class Car
         electricCar.showMessage();
+        electricCar.display();
+        electricCar.printElectricCar();
 
         System.out.println("================");
 

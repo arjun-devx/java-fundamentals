@@ -11,9 +11,12 @@ public class ElectricCar extends  Car{
         System.out.println("ElectricCar Constructor - Child Class of the parent class Car");
         //this requires default constructor in parent class
     }
-    void display() {
+    public void display() {
         System.out.println(protectedTechnology);
         showMessage();
     }
-
+    public void printElectricCar() {
+        super.setLaunchDate("28/08/2025");
+        System.out.println("NoOfWheels : " + super.getLaunchDate());
+    } //calling private attribute using the getter and setter method
 }

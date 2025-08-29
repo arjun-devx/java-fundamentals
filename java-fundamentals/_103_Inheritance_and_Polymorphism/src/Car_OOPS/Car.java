@@ -5,6 +5,7 @@ public class Car {
     public String headLight;
     public String breakLight;
     protected String protectedTechnology = "This is protected technology";
+    private String launchDate;
 
     //constructor
 
@@ -31,5 +32,13 @@ public class Car {
 
     protected void showMessage() {
         System.out.println(protectedTechnology);
+    }
+
+    public String getLaunchDate() {
+        return launchDate;
+    }
+
+    public void setLaunchDate(String launchDate) {
+        this.launchDate = launchDate;
     }
 }
