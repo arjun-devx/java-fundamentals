@@ -1,3 +1,4 @@
+import Calculator.Calculator;
 import Car_OOPS.ElectricCar;
 import Car_OOPS.HybridCar;
 import Car_OOPS.PetrolCar;
@@ -33,5 +34,11 @@ public class Main {
 
         PetrolCar petrolCar1 = new PetrolCar(5, "Halogen", "LED");
         petrolCar1.printCar();
+
+        //Polymorphism
+        Calculator calculator = new Calculator();
+        calculator.add(4, 5);
+        calculator.add(4.5,4);
+        calculator.add(5.5, 6.5);
     }
 }
