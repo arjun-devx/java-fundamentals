@@ -1,3 +1,5 @@
+import Apple.ChildComputer;
+import Apple.Computer;
 import Apple.IPhone;
 import Calculator.CalculatorImplementation;
 
@@ -21,5 +23,9 @@ public class Main {
         System.out.println(iPhone1.getCpuArch() + " " + iPhone2.getCpuArch() + " " + iPhone3.getCpuArch());
         //setting static attribute which is class level attribute - setting the static attribute value from iPhone1 object sets the value for other objects as well.
         //It is because we are setting the value at the class level and not at the object level.
+
+
+        ChildComputer childComputer = new ChildComputer();
+        System.out.println(ChildComputer.staticMethod(5));
     }
 }
